@@ -7,7 +7,7 @@ import cors from "cors";
 config();
 const app = express();
 //middlewares
-app.use(cors({ origin:  "https://mern-ai-fstart-git-master-niti-rani-rais-projects.vercel.app", credentials: true }));
+app.use(cors({ origin:  "https://mern-ai-fstart.vercel.app", credentials: true }));
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
 //remove it in production
