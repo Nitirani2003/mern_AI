@@ -8,7 +8,7 @@ config();
 const app = express();
 
 //middlewares
-app.use(cors({ origin: "https://mern-ai-frontend-ivory.vercel.app/",
+app.use(cors({ origin: "https://mern-ai-frontend-ivory.vercel.app",
 methods:["POST", "GET"],
 credentials: true }));
 app.use(express.json());
