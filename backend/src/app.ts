@@ -9,7 +9,8 @@ const app = express();
 
 //middlewares
 app.use(cors({ origin: "https://mern-ai-fstart.vercel.app",
-methods:["POST", "GET"],
+methods:['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+allowedHeaders: ['Content-Type', 'Authorization'],
 credentials: true }));
 app.use(express.json());
 app.use(cookieParser(process.env.COOKIE_SECRET));
